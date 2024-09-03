@@ -309,21 +309,21 @@ section {
         74deg, 
         #131314 0, 
         #131314 20%,
-        #d96570 33%, 
+        #d96570 33%,
         #9b72cb 38%, 
         #4285f4 42%, 
-        #9b72cb 50%,  
-        #d96570 56%, 
-        #4285f4 64%,
+        #9b72cb 50%,
+        #d96570 56%,
+        #d96570 64%,
         #9b72cb 70%,
-        #d96570 75%,
+        #4285f4 75%,
         #ffffff 80%, 
         #ffffff 100%);
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
     background-size: 500% auto;
-    animation: gradient-animation 1s linear;
+    animation: gradient-animation 800ms linear;
     animation-fill-mode: forwards;
     animation-delay: 500ms;
 }
