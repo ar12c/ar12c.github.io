@@ -321,7 +321,7 @@ section {
     background-clip: text;
     -webkit-text-fill-color: transparent;
     background-size: 500% auto;
-    animation: gradient-animation 2s linear;
+    animation: gradient-animation 1.3s linear;
     animation-fill-mode: forwards;
     animation-delay: 500ms;
 }
