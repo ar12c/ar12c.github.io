@@ -1,3 +1,4 @@
+
 html {
     scroll-behavior: smooth;
 }
@@ -39,7 +40,9 @@ body {
     align-items: center;
 }
 
-
+a {
+    text-decoration: none;
+}
 
 
 /*scrolling*/
@@ -51,22 +54,22 @@ body {
     border-radius: 100%;
     opacity: 0.4;
     position: absolute;
-    transition: all 1s ease-out;
+    transition: all 0.7s ease-out;
     pointer-events: none;
     will-change: transform;
   }
-
+  
   .ripple.run {
     opacity: 0;
     transform: scale(200);
   }
-
+  
   [ripple] {
     position: relative;
     overflow: hidden;
   }
-
-
+  
+  
 
 /* buttons */
 
@@ -112,8 +115,7 @@ body {
     transition: border-radius 300ms ease-in-out;
     border-radius: 60px;
     transition: all 0.3s ease-in-out;
-    position: relative;
-    overflow: hidden;
+    text-decoration: none;
 }
 
 .Return:hover {
@@ -126,7 +128,14 @@ body {
 .Return {
     justify-content: center;
     float: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    text-decoration: none;
+    border-bottom: none;
 }
+
 /*end of button*/
 
 /*navigation bar*/
@@ -255,6 +264,16 @@ body {
     border-radius: 50px;
 }
 
+.Youtube {
+    width: 20%;
+    height: 20%;
+    padding: 10px;
+}
+
+.channelname {
+    padding-left: 20px;
+    padding-bottom: 20px;
+}
 
 /* end of about */
 
@@ -265,11 +284,11 @@ body {
 
 
 .Learn-more {
-    margin-bottom: 10px; /* Adjust the value as needed */
+    margin-bottom: 10px; 
 }
 
 .About-me {
-    margin-top: 20px; /* Adjust the value as needed */
+    margin-top: 20px; 
 }
 
 section {
@@ -285,36 +304,6 @@ section {
     padding-left: 20px;
 }
 
-.Youtube {
-    padding: 50px;
-    width: 160px;
-    height: 160px;
-}
-
-.Youtube-whole {
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-}
-
-.channelname {
-    display: flex;
-    justify-content: right;
-    align-items: right;
-    order: 2;
-    padding-top: 10%;
-    align-items: flex-end;
-}
-
-
-.Return {
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 0 auto;
-}
-
 .Hello {
     background: linear-gradient(
         74deg, 
@@ -322,6 +311,7 @@ section {
         #131314 20%,
         #d96570 33%, 
         #9b72cb 38%, 
+        #9b72cb 42%,
         #4285f4 44%, 
         #9b72cb 50%, 
         #d96570 56%, 
@@ -332,8 +322,9 @@ section {
     background-clip: text;
     -webkit-text-fill-color: transparent;
     background-size: 500% auto;
-    animation: gradient-animation 1.5s linear;
+    animation: gradient-animation 1s linear;
     animation-fill-mode: forwards;
+    animation-delay: 500ms;
 }
 
 @keyframes gradient-animation {
@@ -354,4 +345,30 @@ section {
     position: relative;
     z-index: 9999;
     display:flex;
+}
+
+@media (max-width: 612px) {
+    .navigation-button{
+        float: none;
+        display: block;
+        margin: auto 0;
+        padding-left: 70%;
+    }
+    .Find {
+        display: none;
+    }
+
+    .About {
+        display: none;
+    }
+
+    .Hello {
+        font-size: 80px;
+    }
+
+    .pfp {
+        margin-right: 80%;
+    }
+
+    
 }
