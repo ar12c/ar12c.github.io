@@ -1,4 +1,4 @@
-    html {
+html {
     scroll-behavior: smooth;
 }
 
@@ -55,18 +55,18 @@ body {
     pointer-events: none;
     will-change: transform;
   }
-  
+
   .ripple.run {
     opacity: 0;
     transform: scale(200);
   }
-  
+
   [ripple] {
     position: relative;
     overflow: hidden;
   }
-  
-  
+
+
 
 /* buttons */
 
@@ -317,35 +317,37 @@ section {
 
 .Hello {
     background: linear-gradient(
-        to right,
-        #ffffff 20%,
-        #ff7575 40%,
-        #6e6eff 49%,
-        #ff7575 55%,
-        #6e6eff 60%,
-        #ffffff 80%
-    );
+        74deg, 
+        #131314 0, 
+        #131314 20%,
+        #d96570 33%, 
+        #9b72cb 38%, 
+        #4285f4 44%, 
+        #9b72cb 50%, 
+        #d96570 56%, 
+        #4285f4 70%,
+        #ffffff 80%, 
+        #ffffff 100%);
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
-    text-fill-color: transparent;
     background-size: 500% auto;
-    animation: gemini-knockoff 1.5s linear alternate;
+    animation: gradient-animation 1.5s linear;
+    animation-fill-mode: forwards;
 }
 
-@keyframes gemini-knockoff {
+@keyframes gradient-animation {
     0% {
-        background-position: 0% 50%;
+      background-position: 0% 0%;
     }
     100% {
-        background-position: 100% 50%;
+      background-position: 100% 0%;
     }
 }
 
 .navigation  {
     position: fixed;
     z-index: 10;
-    filter: blur();
 }
 
 .navigation-button {
