@@ -1,0 +1,355 @@
+    html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Poppins';
+    background-color: #131314;
+}
+
+.bold {
+    font-weight: 800;
+}
+
+.font {
+    color: #FFF;
+}
+
+.font-extralarge {
+    color: #FFF;
+}
+
+.font-extralarge {
+    font-size: 100px;
+}
+
+.navigation, .navigationbuttons {
+    max-width: auto;
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    top: 0px;
+}
+
+.ending-font {
+    color: #4b4d50;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
+/*scrolling*/
+
+.ripple {
+    background: white;
+    width: 1px;
+    height: 1px;
+    border-radius: 100%;
+    opacity: 0.4;
+    position: absolute;
+    transition: all 1s ease-out;
+    pointer-events: none;
+    will-change: transform;
+  }
+  
+  .ripple.run {
+    opacity: 0;
+    transform: scale(200);
+  }
+  
+  [ripple] {
+    position: relative;
+    overflow: hidden;
+  }
+  
+  
+
+/* buttons */
+
+.Learn-more {
+    font-family: 'Poppins';
+    background-color: rgb(255, 109, 109); 
+    border: none;
+    color: white;
+    padding: 15px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 200ms ease-out 100ms;
+    transition: border-radius 500ms linear;
+    border-radius: 60px;
+    transition: all 0.3s ease-in-out;
+    position: relative;
+    overflow: hidden;
+    margin-top: 40px;
+}
+
+.Learn-more:hover {
+    background-color: rgb(255, 122, 122);
+    color:#ffffff;
+    border-radius: 12px;
+    transition-delay: 0ms;
+}
+
+.Return {
+    font-family: 'Poppins';
+    background-color: rgb(255, 109, 109); 
+    border: none;
+    color: white;
+    padding: 15px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 200ms ease-out 100ms;
+    transition: border-radius 300ms ease-in-out;
+    border-radius: 60px;
+    transition: all 0.3s ease-in-out;
+    position: relative;
+    overflow: hidden;
+}
+
+.Return:hover {
+    background-color: rgb(255, 165, 165);
+    color:#ffffff;
+    border-radius: 12px;
+    transition-delay: 0ms;
+}
+
+.Return {
+    justify-content: center;
+    float: center;
+}
+/*end of button*/
+
+/*navigation bar*/
+
+.navigation {
+    background-color: #1E1F20;
+    width: auto;
+    height: 30px;
+    margin: 0 0;
+}
+
+.navigation-font {
+    color: #FFF;
+}
+
+.indent {
+    padding: 10px 20%;
+}
+
+/*end of navigation bar*/
+
+/*navigation bar buttons*/
+
+.navigation-button {
+    border: none;
+    background-color: transparent;
+    color: #a8a8a8;
+    font-family: 'Poppins';
+    cursor: pointer;
+    display: flex;
+    float: right;
+    z-index: 1000000;
+}
+
+.navigation-button:hover {
+    color:#FFF;
+}
+
+.navigationbuttons {
+    padding: 10px 20%;
+}
+
+/*end of navigation bar buttons*/
+
+/*pfp*/
+
+.pfp {
+    display: flex;
+    height: 20%;
+    width: 20%;
+    border-radius: 100%;
+    justify-content: right;
+    float: right;
+    align-items: center;
+    position:relative;
+    margin-top: -350px;
+    margin-left: 400px;
+}
+
+/*endpfp*/
+
+/*greeting*/
+
+.normal {
+    font-size: 40px;
+}
+
+.half-opacity {
+    color: #ffffff71;
+}
+
+.Hello {
+    font-size: 80;
+}
+
+
+.Greeting {
+    width: auto;
+    height: auto;
+    align-items: center;
+    padding:  10% 20%;
+}
+
+/*endofgreeting*/
+
+/* about */
+
+
+.retangle {
+    width: 60%;
+    height: auto;
+    background-color: #1E1F20;
+    margin: 20%;
+    border-radius: 50px;
+    padding: 0;
+}
+
+.About-me {
+    display: flex;
+    flex-direction: row; 
+    align-items: flex-start;
+}
+
+.Design {
+    display: flex;
+    flex-direction: row; 
+    align-items: flex-start;
+}
+
+.inside-text {
+    padding: 20px;
+    text-align: left;
+}
+
+.interestpicturescat {
+    width: 50%;
+    height: 50%;
+    order: 2; 
+    border-radius: 50px;
+}
+
+.interestpicturesmateiral {
+    width: 50%;
+    height: auto;
+    order: 2; 
+    border-radius: 50px;
+}
+
+
+/* end of about */
+
+
+.Pre-aboutme {
+    margin-top: 20%;
+}
+
+
+.Learn-more {
+    margin-bottom: 10px; /* Adjust the value as needed */
+}
+
+.About-me {
+    margin-top: 20px; /* Adjust the value as needed */
+}
+
+section {
+    height: auto;
+    width: auto;
+    padding-top: 20px;
+}
+
+/* Channel Name */
+
+.More-of {
+    padding-top: 30px;
+    padding-left: 20px;
+}
+
+.Youtube {
+    padding: 50px;
+    width: 160px;
+    height: 160px;
+}
+
+.Youtube-whole {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+}
+
+.channelname {
+    display: flex;
+    justify-content: right;
+    align-items: right;
+    order: 2;
+    padding-top: 10%;
+    align-items: flex-end;
+}
+
+
+.Return {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.Hello {
+    background: linear-gradient(
+        to right,
+        #ffffff 20%,
+        #ff7575 40%,
+        #6e6eff 49%,
+        #ff7575 55%,
+        #6e6eff 60%,
+        #ffffff 80%
+    );
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-fill-color: transparent;
+    background-size: 500% auto;
+    animation: gemini-knockoff 1.5s linear alternate;
+}
+
+@keyframes gemini-knockoff {
+    0% {
+        background-position: 0% 50%;
+    }
+    100% {
+        background-position: 100% 50%;
+    }
+}
+
+.navigation  {
+    position: fixed;
+    z-index: 10;
+    filter: blur();
+}
+
+.navigation-button {
+    position: relative;
+    z-index: 9999;
+    display:flex;
+}
