@@ -312,6 +312,8 @@ section {
 
 .ending-font2 {
     color: #9b72cb;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
 @keyframes gradient-animation {
