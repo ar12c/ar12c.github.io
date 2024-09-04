@@ -1,14 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 html {
     scroll-behavior: smooth;
 }
 
 body {
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
     background-color: #131314;
+    font-family: 'Poppins', sans-serif;
 }
 
 .bold {
-    font-weight: 800;
+    font-weight: 500;
 }
 
 .font {
@@ -20,8 +22,13 @@ body {
 }
 
 .font-extralarge {
-    font-size: 100px;
+    font-size: 70px;
 }
+
+.medium, .normal {
+    font-weight: 400;
+}
+
 
 .navigation, .navigationbuttons {
     max-width: auto;
@@ -43,32 +50,7 @@ a {
     text-decoration: none;
 }
 
-
 /*scrolling*/
-
-.ripple {
-    background: white;
-    width: 1px;
-    height: 1px;
-    border-radius: 100%;
-    opacity: 0.4;
-    position: absolute;
-    transition: all 0.7s ease-out;
-    pointer-events: none;
-    will-change: transform;
-  }
-  
-  .ripple.run {
-    opacity: 0;
-    transform: scale(200);
-  }
-  
-  [ripple] {
-    position: relative;
-    overflow: hidden;
-  }
-  
-  
 
 /* buttons */
 
@@ -190,7 +172,7 @@ a {
     float: right;
     align-items: center;
     position:relative;
-    margin-top: -350px;
+    margin-top: -250px;
     margin-left: 400px;
 }
 
@@ -205,11 +187,6 @@ a {
 .half-opacity {
     color: #ffffff71;
 }
-
-.Hello {
-    font-size: 80;
-}
-
 
 .Greeting {
     width: auto;
@@ -251,7 +228,7 @@ a {
 
 .interestpicturescat {
     width: 50%;
-    height: 50%;
+    height: 100%;
     order: 2; 
     border-radius: 50px;
 }
@@ -272,6 +249,7 @@ a {
 .channelname {
     padding-left: 20px;
     padding-bottom: 20px;
+    font-weight: 300;
 }
 
 /* end of about */
@@ -305,26 +283,29 @@ section {
 
 .Hello {
     background: linear-gradient(
-        74deg, 
+        78deg, 
         #131314 0, 
-        #131314 20%,
-        #d96570 33%,
-        #9b72cb 38%, 
-        #4285f4 42%, 
-        #9b72cb 50%,
-        #d96570 56%,
-        #d96570 64%,
-        #9b72cb 70%,
-        #4285f4 75%,
-        #ffffff 80%, 
+        #131314 30%,
+        #d96570 40%,
+        #9b72cb 46%, 
+        #4285f4 50%, 
+        #9b72cb 55%,
+        #9b72cb 60%,
+        #d96570 63%,
+        #d96570 67%,
+        #9b72cb 69%,
+        #4285f4 70%,
+        #fff 75%, 
         #ffffff 100%);
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
     background-size: 500% auto;
-    animation: gradient-animation 1.3s linear;
+    animation: gradient-animation 2.4s ease;
     animation-fill-mode: forwards;
-    animation-delay: 500ms;
+    animation-delay: 1s;
+    font-size: 50px;
+    font-weight: 100;
 }
 
 @keyframes gradient-animation {
@@ -363,12 +344,55 @@ section {
     }
 
     .Hello {
-        font-size: 80px;
+        font-size: 50px;
     }
 
     .pfp {
         margin-right: 80%;
+        display: flex;
+        top: -63px;
+        max-height: 20%;
+        max-width: 20%;
     }
 
+    .About-me {
+        display: flex;
+        flex-direction: column; 
+        align-items: flex-start;
+    }
+
+    .inside-text {
+        padding-left: 20px;
+        text-align: left;
+        order: 2;
+    }
+
+    .interestpicturescat {
+        width: 100%;
+        height: 50%;
+        order: 2; 
+        border-radius: 0px;
+    }
+
+    .Design {
+        display: flex;
+        flex-direction: column; 
+        align-items: flex-start;
+    }
+
+    .interestpicturesmateiral {
+        width: 100%;
+        height: auto;
+        order: 2; 
+        border-radius: 20px;
+    }
     
+    .retangle {
+        width: 60%;
+        height: auto;
+        background-color: #1E1F20;
+        margin: 20%;
+        border-radius: 28px;
+        padding: 0;
+    }
 }
