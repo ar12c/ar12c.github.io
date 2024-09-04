@@ -303,7 +303,7 @@ section {
     background-clip: text;
     -webkit-text-fill-color: transparent;
     background-size: 500% auto;
-    animation: gradient-animation 1.6s ease-in;
+    animation: gradient-animation 1.3s ease-out;
     animation-fill-mode: forwards;
     animation-delay: 1s;
     font-size: 50px;
