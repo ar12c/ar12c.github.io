@@ -199,6 +199,34 @@ a {
 
 /*endofgreeting*/
 
+
+/* ripple effect */
+
+.ripple {
+    background: white;
+    width: 1px;
+    height: 1px;
+    border-radius: 100%;
+    opacity: 0.4;
+    position: absolute;
+    transition: all 1s ease-out;
+    pointer-events: none;
+    will-change: transform;
+}
+  
+.ripple.run {
+    opacity: 0;
+    transform: scale(1000);
+}
+  
+[ripple] {
+    position: relative;
+    overflow: hidden;
+}
+  
+
+
+
 /* about */
 
 
@@ -358,7 +386,7 @@ section {
     .pfp {
         margin-right: 80%;
         display: flex;
-        top: -63px;
+        top: -53px;
         max-height: 20%;
         max-width: 20%;
     }
