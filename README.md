@@ -7,4 +7,4 @@ please ignore my bad code :D
 - [x] Added support for more mobile devices
 - [x] Dynamic greeting
 - [x] Gemini greeting animation
-- [ ] Ripple effect for the full Google material experience
+- [x] Ripple effect for the full Google material experience
