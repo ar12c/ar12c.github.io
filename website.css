@@ -54,59 +54,38 @@ a {
 
 /*scrolling*/
 
-/* buttons */
-
-.Learn-more {
-    font-family: 'Poppins';
-    background-color: rgb(255, 109, 109); 
-    border: none;
-    color: white;
-    padding: 15px 25px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    cursor: pointer;
-    transition: background-color 200ms ease-out 100ms;
-    transition: border-radius 500ms linear;
+.ripple {
+    position: absolute;
+    background: rgba(0, 0, 0, 0.3);
     border-radius: 60px;
-    transition: all 0.3s ease-in-out;
+    transform: scale(0);
+    animation: ripple-animation 0.8s linear;
+}
+  
+@keyframes ripple-animation {
+    to {
+      transform: scale(4);
+      opacity: 0;
+      border-radius: 25px;
+    }
+}
+  
+.ripple-btn {
+    padding: 15px 25px;
+    border: none;
+    background: #d96570;
+    color: #fff;
+    border-radius: 8px;
+    font-size: 18px;
+    cursor: pointer;
     position: relative;
     overflow: hidden;
-    margin-top: 40px;
-}
-
-.Learn-more:hover {
-    background-color: rgb(255, 122, 122);
-    color:#ffffff;
-    border-radius: 12px;
-    transition-delay: 0ms;
-}
-
-.Return {
-    font-family: 'Poppins';
-    background-color: rgb(255, 109, 109); 
-    border: none;
-    color: white;
-    padding: 15px 25px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    cursor: pointer;
-    transition: background-color 200ms ease-out 100ms;
-    transition: border-radius 300ms ease-in-out;
     border-radius: 60px;
     transition: all 0.3s ease-in-out;
-    text-decoration: none;
 }
+  
 
-.Return:hover {
-    background-color: rgb(255, 165, 165);
-    color:#ffffff;
-    border-radius: 12px;
-    transition-delay: 0ms;
-}
+/* buttons */
 
 .Return {
     justify-content: center;
@@ -201,30 +180,6 @@ a {
 
 
 /* ripple effect */
-
-.ripple {
-    background: white;
-    width: 1px;
-    height: 1px;
-    border-radius: 100%;
-    opacity: 0.4;
-    position: absolute;
-    transition: all 1s ease-out;
-    pointer-events: none;
-    will-change: transform;
-}
-  
-.ripple.run {
-    opacity: 0;
-    transform: scale(1000);
-}
-  
-[ripple] {
-    position: relative;
-    overflow: hidden;
-}
-  
-
 
 
 /* about */
@@ -386,7 +341,7 @@ section {
     .pfp {
         margin-right: 80%;
         display: flex;
-        top: -53px;
+        top: -10px;
         max-height: 20%;
         max-width: 20%;
     }

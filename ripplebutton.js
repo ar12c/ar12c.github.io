@@ -1,27 +1,18 @@
-const elementsWithRipple = document.querySelectorAll('[ripple]');
+const createRipple = (e) => {
+  const button = e.currentTarget;
+  const rect = button.getBoundingClientRect();
+  const size = Math.max(rect.width, rect.height);
+  const ripple = document.createElement("span");
 
-elementsWithRipple.forEach(elementWithRipple => {
-  elementWithRipple.addEventListener('pointerdown', (mouseEvent) => {
-    // Create a ripple element <div class="ripple">
-    const rippleEl = document.createElement('div');
-    rippleEl.classList.add('ripple');
-    
-    // Position the ripple
-    const x = mouseEvent.offsetX;
-    const y = mouseEvent.offsetY;
-    
-    rippleEl.style.left = `${x}px`;
-    rippleEl.style.top = `${y}px`;
-    
-    elementWithRipple.appendChild(rippleEl);
-    
-    requestAnimationFrame(() => {
-      rippleEl.classList.add('run');
-    });
-    
-    // Remove ripple element when the transition is done
-    rippleEl.addEventListener('transitionend', () => {
-      rippleEl.remove();
-    });
+  ripple.classList.add("ripple");
+  ripple.style.width = size + "px";
+  ripple.style.height = size + "px";
+  ripple.style.left = e.clientX - rect.left - size / 2 + "px";
+  ripple.style.top = e.clientY - rect.top - size / 2 + "px";
+
+  button.appendChild(ripple);
+
+  ripple.addEventListener("animationend", () => {
+    ripple.remove();
   });
-})
+};
