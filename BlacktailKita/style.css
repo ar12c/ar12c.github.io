@@ -12,5 +12,17 @@ body {
 }
 
 .Font {
-    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    color: #fff;
+}
+
+.Greeting {
+    background-color: #1E1F20;
+    width: auto;
+    height: 20%;
+    padding: 40px;
+    border-radius: 20px;
+    margin: 10%;
+    text-align: left;
+    margin-top: 20%;
 }
