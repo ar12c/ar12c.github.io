@@ -285,25 +285,25 @@ section {
 
 .Hello {
     background: linear-gradient(
-        80deg, 
+        78deg, 
         #131314 0, 
-        #131314 20%,
-        #d96570 25%,
-        #9b72cb 30%, 
-        #4285f4 36%, 
-        #9b72cb 40%,
-        #9b72cb 46%,
-        #d96570 52%,
-        #d96570 57%,
+        #131314 36%,
+        #d96570 40%,
+        #9b72cb 46%, 
+        #4285f4 50%, 
+        #9b72cb 55%,
         #9b72cb 60%,
-        #4285f4 65%,
+        #d96570 63%,
+        #d96570 67%,
+        #9b72cb 69%,
+        #4285f4 70%,
         #fff 75%, 
         #ffffff 100%);
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
     background-size: 500% auto;
-    animation: gradient-animation 1.3s ease-out;
+    animation: gradient-animation 2.4s ease;
     animation-fill-mode: forwards;
     animation-delay: 1s;
     font-size: 50px;
