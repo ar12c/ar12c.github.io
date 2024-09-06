@@ -16,8 +16,8 @@ body {
 
 #up {
     position: absolute;
-    height: 20%;
-    width: 20%;
+    height: 30%;
+    width: 30%;
     border-radius: 50%;
     background-image: linear-gradient(78deg, #9b72cb, #4285f4, #d96570, #131314);
     filter: blur(80px);
@@ -41,8 +41,8 @@ body {
 #down {
     position: absolute;
     right: 0;
-    height: 20%;
-    width: 20%;
+    height: 40%;
+    width: 40%;
     border-radius:  50%;
     background-image: linear-gradient(78deg, #f9ffa6, #ce73bd, #d96570, #131314);
     filter: blur(100px);
@@ -65,8 +65,8 @@ body {
 
 #left {
     position: absolute;
-    height: 10%;
-    width: 10%;
+    height: 20%;
+    width: 20%;
     border-radius: 50%;
     background-image: linear-gradient(78deg, #ff9456, #f1d47c, #d96570, #131314);
     filter: blur(80px);
@@ -89,8 +89,8 @@ body {
 
 #right {
     position: absolute;
-    height: 25%;
-    width: 25%;
+    height: 35%;
+    width: 35%;
     border-radius: 50%;
     background-image: linear-gradient(170deg, #ff9efd, #7cb7f1, #d96570, #131314);
     filter: blur(80px);
