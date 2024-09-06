@@ -16,8 +16,8 @@ body {
 
 #up {
     position: absolute;
-    height: 800px;
-    width: 800px;
+    height: 400px;
+    width: 400px;
     border-radius: 50%;
     background-image: linear-gradient(78deg, #9b72cb, #4285f4, #d96570, #131314);
     filter: blur(80px);
@@ -28,11 +28,11 @@ body {
 @keyframes up {
     0%, 100%{
         top: -1000px;
-        left: 20px;
+        left: 10%px;
     }
     50% {
         top: 700px;
-        left: 400px;
+        left: 40%px;
     }
     
 }
@@ -40,8 +40,8 @@ body {
 #down {
     position: absolute;
     right: 0;
-    height: 500px;
-    width: 500px;
+    height: 200px;
+    width: 200px;
     border-radius:  50%;
     background-image: linear-gradient(78deg, #f9ffa6, #ce73bd, #d96570, #131314);
     filter: blur(100px);
@@ -52,19 +52,19 @@ body {
 @keyframes down {
     0%, 100%{
         top: -100px;
-        right: 20px;
+        right: 20%;
     }
     20% {
         top: 700px;
-        right: 1000px;
+        right: 80%;
     }
     
 }
 
 #left {
     position: absolute;
-    height: 800px;
-    width: 800px;
+    height: 100px;
+    width: 100px;
     border-radius: 50%;
     background-image: linear-gradient(78deg, #ff9456, #f1d47c, #d96570, #131314);
     filter: blur(80px);
@@ -75,19 +75,19 @@ body {
 @keyframes left {
     0%, 100%{
         top: 1000px;
-        right: 20px;
+        right: 0%;
     }
     20% {
         top: 700px;
-        right: 1000px;
+        right: 20%;
     }
     
 }
 
 #right {
     position: absolute;
-    height: 800px;
-    width: 800px;
+    height: 400px;
+    width: 400px;
     border-radius: 50%;
     background-image: linear-gradient(170deg, #ff9efd, #7cb7f1, #d96570, #131314);
     filter: blur(80px);
@@ -97,12 +97,12 @@ body {
 
 @keyframes right {
     0%, 100%{
-        top: 2500px;
-        left: 20px;
+        top: 1900px;
+        left: 20%;
     }
     50% {
         top: 1500px;
-        left: 400px;
+        left: 50%;
     }
     
 }
@@ -392,7 +392,7 @@ section {
     background-size: 500% auto;
     animation: gradient-animation 2.4s ease;
     animation-fill-mode: forwards;
-    animation-delay: 1s;
+    animation-delay: 800ms;
     font-size: 50px;
     font-weight: 100;
 }
