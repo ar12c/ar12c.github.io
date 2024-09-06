@@ -524,11 +524,15 @@ section {
         height: auto;
         background-color: #1E1F20;
         margin: 20%;
-        border-radius: 28px;
+        border-radius: 35px;
         padding: 0;
     }
 
     .Hello {
         font-size: 30px;
+    }
+
+    .retangle::before, .retangle::after {
+        border-radius: 35px;
     }
 }
