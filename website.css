@@ -97,11 +97,11 @@ body {
 
 @keyframes right {
     0%, 100%{
-        top: 3000px;
+        top: 2500px;
         left: 20px;
     }
     50% {
-        top: 2000px;
+        top: 1500px;
         left: 400px;
     }
     
