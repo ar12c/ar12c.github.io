@@ -7,8 +7,104 @@ html {
 }
 
 body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
     background-color: #131314;
     font-family: 'Poppins', sans-serif;
+}
+
+#up {
+    position: absolute;
+    height: 800px;
+    width: 800px;
+    border-radius: 50%;
+    background-image: linear-gradient(78deg, #9b72cb, #4285f4, #d96570, #131314);
+    filter: blur(80px);
+    z-index: -2;
+    animation: up 60s infinite;
+}
+
+@keyframes up {
+    0%, 100%{
+        top: -1000px;
+        left: 20px;
+    }
+    50% {
+        top: 700px;
+        left: 400px;
+    }
+    
+}
+
+#down {
+    position: absolute;
+    right: 0;
+    height: 500px;
+    width: 500px;
+    border-radius:  50%;
+    background-image: linear-gradient(78deg, #f9ffa6, #ce73bd, #d96570, #131314);
+    filter: blur(100px);
+    z-index: -2;
+    animation: down 120s infinite;
+}
+
+@keyframes down {
+    0%, 100%{
+        top: -100px;
+        right: 20px;
+    }
+    20% {
+        top: 700px;
+        right: 1000px;
+    }
+    
+}
+
+#left {
+    position: absolute;
+    height: 800px;
+    width: 800px;
+    border-radius: 50%;
+    background-image: linear-gradient(78deg, #ff9456, #f1d47c, #d96570, #131314);
+    filter: blur(80px);
+    z-index: -2;
+    animation: left 200s infinite;
+}
+
+@keyframes left {
+    0%, 100%{
+        top: 1000px;
+        right: 20px;
+    }
+    20% {
+        top: 700px;
+        right: 1000px;
+    }
+    
+}
+
+#right {
+    position: absolute;
+    height: 800px;
+    width: 800px;
+    border-radius: 50%;
+    background-image: linear-gradient(170deg, #ff9efd, #7cb7f1, #d96570, #131314);
+    filter: blur(80px);
+    z-index: -2;
+    animation: right 200s infinite;
+}
+
+@keyframes right {
+    0%, 100%{
+        top: 3000px;
+        left: 20px;
+    }
+    50% {
+        top: 2000px;
+        left: 400px;
+    }
+    
 }
 
 .bold {
@@ -38,6 +134,7 @@ body {
     left: 0px;
     right: 0px;
     top: 0px;
+    background-color: #1E1F20;
 }
 
 .ending-font {
@@ -109,7 +206,7 @@ a {
 /*navigation bar*/
 
 .navigation {
-    background-color: #1E1F20;
+    background-color: transparent;
     width: auto;
     height: 30px;
     margin: 0 0;
@@ -161,8 +258,8 @@ a {
     position:relative;
     margin-top: -250px;
     margin-left: 400px;
-    background-image: conic-gradient(from 90deg, blue, green, red);
 }
+
 
 /*endpfp*/
 
@@ -197,7 +294,7 @@ a {
     height: auto;
     background-color: #1E1F20;
     margin: 20%;
-    border-radius: 50px;
+    border-radius: 65px;
     padding: 0;
 }
 
@@ -276,8 +373,8 @@ section {
 .Hello {
     background: linear-gradient(
         78deg, 
-        #131314 0, 
-        #131314 36%,
+        #13131400 0, 
+        #13131400 36%,
         #d96570 40%,
         #9b72cb 46%, 
         #4285f4 50%, 
