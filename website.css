@@ -47,7 +47,7 @@ body {
     background-image: linear-gradient(78deg, #f9ffa6, #ce73bd, #d96570, #131314);
     filter: blur(100px);
     z-index: -2;
-    animation: down 120s infinite;|
+    animation: down 120s infinite;
     overflow: hidden;
 }
 
