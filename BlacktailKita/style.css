@@ -14,15 +14,68 @@ body {
 .Font {
     font-weight: 400;
     color: #fff;
+    text-align: center;
+    padding: 40px;
 }
 
 .Greeting {
     background-color: #1E1F20;
-    width: auto;
+    width: 50%;
     height: 20%;
-    padding: 40px;
     border-radius: 20px;
-    margin: 10%;
-    text-align: left;
-    margin-top: 20%;
+    position: relative;
+}
+
+.modelnumber {
+    color: #ffffff60;
+}
+
+.phonepro {
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    padding-bottom: 20px;
+    height: auto;
+    width: 70%;
+}
+
+@property --angle{
+    syntax: "<angle>";
+    initial-value: 0deg;
+    inherits: false;
+}
+
+.Greeting::after, .Greeting::before {
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: conic-gradient(from var(--angle), #FC6A35, #F43A7E, #FEBA15, #AB50FA, #19A2FE, #C9E7FC, #FC6A35);
+    top: 50%;
+    left: 50%;
+    translate: -50% -50%;
+    z-index: -1;
+    padding: 3px;
+    border-radius: 21px;
+    animation: 3s spin linear infinite;
+}
+
+.Center {
+    display: block;
+    align-items: center;
+    justify-content: center;
+}
+
+.Greeting::before {
+    filter: blur(1.5rem);
+    opacity: 0.5;
+}
+
+@keyframes spin {
+    from{
+        --angle: 0deg;
+    }
+    to {
+        --angle: 360deg;
+    }
 }
