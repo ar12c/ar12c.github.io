@@ -16,13 +16,14 @@ body {
 
 #up {
     position: absolute;
-    height: 400px;
-    width: 400px;
+    height: 20%;
+    width: 20%;
     border-radius: 50%;
     background-image: linear-gradient(78deg, #9b72cb, #4285f4, #d96570, #131314);
     filter: blur(80px);
     z-index: -2;
     animation: up 60s infinite;
+    overflow: hidden;
 }
 
 @keyframes up {
@@ -40,13 +41,14 @@ body {
 #down {
     position: absolute;
     right: 0;
-    height: 200px;
-    width: 200px;
+    height: 20%;
+    width: 20%;
     border-radius:  50%;
     background-image: linear-gradient(78deg, #f9ffa6, #ce73bd, #d96570, #131314);
     filter: blur(100px);
     z-index: -2;
-    animation: down 120s infinite;
+    animation: down 120s infinite;|
+    overflow: hidden;
 }
 
 @keyframes down {
@@ -56,53 +58,55 @@ body {
     }
     20% {
         top: 700px;
-        right: 80%;
+        right: 60%;
     }
     
 }
 
 #left {
     position: absolute;
-    height: 100px;
-    width: 100px;
+    height: 10%;
+    width: 10%;
     border-radius: 50%;
     background-image: linear-gradient(78deg, #ff9456, #f1d47c, #d96570, #131314);
     filter: blur(80px);
     z-index: -2;
     animation: left 200s infinite;
+    overflow: hidden;
 }
 
 @keyframes left {
     0%, 100%{
         top: 1000px;
-        right: 0%;
+        right: 20%;
     }
     20% {
         top: 700px;
-        right: 20%;
+        right: 40%;
     }
     
 }
 
 #right {
     position: absolute;
-    height: 400px;
-    width: 400px;
+    height: 25%;
+    width: 25%;
     border-radius: 50%;
     background-image: linear-gradient(170deg, #ff9efd, #7cb7f1, #d96570, #131314);
     filter: blur(80px);
     z-index: -2;
     animation: right 200s infinite;
+    overflow: hidden;
 }
 
 @keyframes right {
     0%, 100%{
         top: 1900px;
-        left: 20%;
+        left: 30%;
     }
     50% {
         top: 1500px;
-        left: 50%;
+        left: 57%;
     }
     
 }
