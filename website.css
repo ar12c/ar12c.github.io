@@ -23,7 +23,6 @@ body {
     filter: blur(80px);
     z-index: -2;
     animation: up 60s infinite;
-    overflow: hidden;
 }
 
 @keyframes up {
@@ -48,7 +47,6 @@ body {
     filter: blur(100px);
     z-index: -2;
     animation: down 120s infinite;
-    overflow: hidden;
 }
 
 @keyframes down {
@@ -72,7 +70,6 @@ body {
     filter: blur(80px);
     z-index: -2;
     animation: left 200s infinite;
-    overflow: hidden;
 }
 
 @keyframes left {
@@ -96,7 +93,6 @@ body {
     filter: blur(80px);
     z-index: -2;
     animation: right 200s infinite;
-    overflow: hidden;
 }
 
 @keyframes right {
