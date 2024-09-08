@@ -18,6 +18,34 @@ body {
     font-weight: 500;
 }
 
+.ar12c {
+    background: linear-gradient(
+        78deg, 
+        #4285f4 0, 
+        #4285f4 30%, 
+        #b8d3ff 50%,
+        #4285f4 70%, 
+        #4285f4 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 500% auto;
+    animation: ar12c-gradient 2.4s infinite;
+    animation-fill-mode: forwards;
+    animation-delay: 800ms;
+    font-size: 50px;
+    font-weight: 500;
+}
+
+@keyframes ar12c-gradient {
+    0% {
+      background-position: 0% 0%;
+    }
+    100% {
+      background-position: 100% 0%;
+    }
+}
+
 .font {
     color: #FFF;
 }
