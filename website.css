@@ -273,14 +273,16 @@ a {
 }
 
 .Youtube {
-    width: 20%;
-    height: 20%;
-    padding: 10px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 50%;
+    width: 50%; 
 }
 
 .channelname {
-    padding-left: 20px;
-    padding-bottom: 20px;
+    text-align: center;
+    color: #c25964;
     font-weight: 300;
 }
 
